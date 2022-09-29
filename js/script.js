@@ -1,6 +1,22 @@
 // 모든 리소스가 준비가 되있는가?
 // jquery를 이용(html, css ,js)
 $(document).ready(function () {
+
+      const modal = $(".modal");
+      const modalClose = $(".modal-close");
+      const modalWrap = $(".modal-wrap");
+      modal.click(function () {
+        modal.fadeOut(500);
+        $("body").css("overflow", "auto");
+      });
+      modalClose.click(function () {
+        modal.fadeOut(500);
+        $("body").css("overflow", "auto");
+      });
+      modalWrap.click(function (event) {
+        event.stopPropagation();
+      });
+
   // 전체메뉴 보기 기능
   // .more-wrap을 저장
   let more_wrap = $('.more-wrap');
