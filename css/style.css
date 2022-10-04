@@ -1075,7 +1075,114 @@ margin-bottom: 0;
   font-size: 15px;
   color: #444;
 }
+.calendar .community-main{
+  padding: 0;
+}
 
+#datepicker {
+  position: relative;
+  display: block;
+  width: 100%;
+}
+#datepicker .ui-widget {
+  width: 100%;
+  border: 0;
+}
+#datepicker .ui-datepicker-header {
+  border: 0;
+  background: #fff;
+}
+#datepicker .ui-datepicker-title {
+  font-size: 22px;
+  color: #333;
+}
+#datepicker .ui-datepicker-prev,
+#datepicker .ui-datepicker-next {
+  width: 34px;
+  height: 34px;
+  border: 1px solid #e1e1e1;
+  border-radius: 0;
+}
+
+#datepicker .ui-datepicker .ui-datepicker-prev {
+  left: 0;
+  top: 0;
+}
+#datepicker .ui-datepicker .ui-datepicker-next {
+  right: 0;
+  top: 0;
+}
+
+#datepicker .ui-datepicker .ui-datepicker-prev span {
+  cursor: pointer;
+  background: url("../images/img_arrow01.svg") no-repeat center;
+  background-size: 6px 10px;
+}
+#datepicker .ui-datepicker .ui-datepicker-next span {
+  cursor: pointer;
+  background: url("../images/img_arrow01.svg") no-repeat center;
+  background-size: 6px 10px;
+  transform: rotate(180deg);
+}
+
+#datepicker .ui-datepicker .ui-state-hover {
+  background: #fff;
+}
+
+#datepicker .ui-datepicker-prev,
+#datepicker .ui-datepicker-next {
+  width: 34px;
+  height: 34px;
+  border: 1px solid #e1e1e1;
+  border-radius: 0;
+}
+
+#datepicker .ui-datepicker-calendar thead {
+  border-top: 1px solid #e1e1e1;
+  border-bottom: 1px solid #e1e1e1;
+  font-size: 15px;
+  color: #2a2a2a;
+}
+#datepicker .ui-datepicker th {
+  padding: 0;
+  line-height: 28px;
+}
+#datepicker .ui-datepicker-week-end {
+  color: #ff3333;
+}
+
+#datepicker th:last-child {
+  color: #0066ff;
+}
+#datepicker td {
+  padding: 2px;
+}
+#datepicker td a {
+  line-height: 22px;
+  color: #2a2a2a;
+  font-size: 15px;
+  font-weight: 600;
+  background: #f7f7f7;
+  border: 0;
+  text-align: center;
+}
+
+#datepicker .ui-state-active{
+  background-color: #2c3035;
+  color: #fff;
+}
+/* 오늘날짜 CSS */
+#datepicker .ui-state-highlight,
+#datepicker .ui-state-active {
+  background: #2c3035 !important;
+  color: #fff;
+}
+#datepicker tr td:first-child a {
+  color: #ff3333;
+}
+#datepicker tr td:last-child a {
+  color: #0066ff;
+}
 /* 커뮤니티 PC 버전 */
 /* 커뮤니티 반응형 */
 @media all and (max-width:1000px) {
